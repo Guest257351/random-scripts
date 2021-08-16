@@ -1,5 +1,6 @@
 @echo off
 color 0A
+if exist consolesize.txt goto size
 :loop
 if exist consoleinput.txt (goto output) else (goto loop)
 :output
