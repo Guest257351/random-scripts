@@ -11,3 +11,10 @@ echo %output%
 echo.
 del consoleinput.txt
 goto loop
+:size
+< consolesize.txt (
+  set /p size=
+)
+mode %size%
+del consolesize.txt
+goto loop
